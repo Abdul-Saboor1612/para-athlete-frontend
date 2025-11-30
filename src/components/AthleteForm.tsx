@@ -9,6 +9,7 @@ import { CheckCircle2, AlertCircle, Loader2, Sparkles } from 'lucide-react';
 import { FormData, ValidationErrors } from '@/types';
 import { predictAthlete, BackendPredictionResponse } from '@/lib/api';
 import { toast } from 'sonner';
+import { cn } from '@/lib/utils';
 
 interface AthleteFormProps {
   onSuccess?: (result: BackendPredictionResponse) => void;
